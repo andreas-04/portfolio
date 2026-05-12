@@ -40,8 +40,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <img src="/IMG_5115.jpg" alt="Andreas Neacsu" className="hero-photo" />
-      </div>
+<img src="IMG_5115.jpg" alt="Andreas Neacsu" className="hero-photo" />      </div>
     </section>
   )
 }
