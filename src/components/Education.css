@@ -1,0 +1,49 @@
+.edu-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.edu-school {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.edu-degree {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.edu-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.edu-location {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.edu-period {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.edu-gpa {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.gpa-label {
+  font-weight: 600;
+}
+
+.gpa-value {
+  margin-left: 4px;
+}

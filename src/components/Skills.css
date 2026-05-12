@@ -1,0 +1,30 @@
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-card {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.skill-category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  min-width: 140px;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+
+.skill-pill {
+  font-size: 0.875rem;
+  color: #333;
+}

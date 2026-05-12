@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape Andreas Neacsu} 
+        \\
+        % SUBHEADING
+        \small
+        % EMAIL
+        \href{mailto:andreasneacsu@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{andreasneacsu@gmail.com}} ~ 
+        % LINKEDIN
+        \href{https://www.linkedin.com/in/andreas-neacsu}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/andreas-neacsu}}  ~
+        % GITHUB
+        \href{https://www.github.com/andreas-04}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/andreas-04}}
+    \end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.48\textwidth}
+  \section{Education}
+    \resumeSubHeadingListStart
+    
+      % MAIN INFORMATION
+      \resumeSubheading
+      {University Of Idaho}{Moscow, ID}
+      {B.S Computer Science, 3.57 GPA}{May, 2026}
+    \resumeSubHeadingListEnd
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \section{Technical Skills}
+      \vspace{-7pt}
+      \begin{itemize}
+      [leftmargin=0.15in, label={}]\small{\item{
+          % LANGUAGES
+          \textbf{Languages}{: Go, Python, JavaScript, TypeScript, C++} \\
+          \textbf{Developer Tools}{: Git, Unix, Docker, Kubernetes}}}
+      \end{itemize}
+\end{minipage}
+
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading {Associate Software Engineer}{June 2025 - Present}
+        {Schweitzer Engineering Laboratories}{}
+            \resumeItemListStart
+    \resumeItem{Built an internal code generation tool that creates complete Go microservices 
+    directly from .proto files, reducing service bootstrap time from days to minutes and 
+    shipping as part of an internal SDK release.}
+
+    \resumeItem{Applied hexagonal architecture patterns to generate clean, maintainable service 
+    layers across HTTP, gRPC, and WebSocket transports.}
+
+\resumeItem{Diagnosed recurring system instability in CI virtual machines and built a 
+system readiness endpoint that automated pre-run health validation, unblocking 
+a 15+ person development team and reducing failed pipeline runs.}
+
+    \resumeItem{Partnered with engineers across multiple product groups to surface recurring 
+    workflow pain points and drive feature enhancements aligned with real development needs.}
+    
+\resumeItemListEnd
+        \resumeSubheading {Software Engineering Intern}{October 2024 - June 2025}{Schweitzer Engineering Laboratories}{}
+            \resumeItemListStart
+                \resumeItem{Shipped production-ready frontend features for a containerized React microservice, using MobX to improve state consistency, responsiveness, and user workflow clarity.}
+                
+                \resumeItem{Developed and maintained Cypress end-to-end test suites, increasing test reliability and preventing regressions across high-traffic user flows.}
+                
+                \resumeItem{Implemented CI/CD pipeline caching for unit tests, reducing build times by up to 30\% and speeding up iteration for the entire development team.}
+                
+                \resumeItem{Collaborated with senior engineers in an Agile environment through design discussions, code reviews, and cross-service integration work.}
+                
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+\resumeSubheading{TerraCrate}{August 2025 - May 2026}
+    {Capston Senior Design Project}{}
+    \resumeItemListStart
+        \resumeItem{Designed and implemented a Flask REST API with JWT session management and 
+        attribute-based access control handling file management, user administration, 
+        and system configuration for a self-hosted file-sharing platform.}
+        
+        \resumeItem{Engineered an mTLS authentication layer using a self-signed CA, nginx reverse 
+        proxy, and automated X.509/PKCS\#12 certificate delivery via SMTP, enabling 
+        zero-trust client verification.}
+        
+        \resumeItem{Implemented full-disk encryption on a Raspberry Pi using LUKS with custom 
+        systemd service orchestration to ensure secure startup sequencing on constrained hardware.}
+        
+        \resumeItem{Deployed a multi-service architecture via Docker Compose with persistent 
+        volumes, custom Docker daemon DNS configuration, and an admin-controlled invite system with domain allowlisting.}
+        
+        \resumeItem{Built a React/TypeScript frontend with role-aware UI rendering and a 
+        real-time admin dashboard for user, group, and system management.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\section{Extracurricular Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Association for Computing Machinery}{January 2023 - December 2023}{Chapter President - University of Idaho}{}
+            \resumeItemListStart
+                \resumeItem{Led the University of Idaho ACM chapter, organizing events and initiatives that increased membership by 25\% and improved community engagement.}
+                \resumeItem{Hosted workshops on portfolio building and technical interview preparation, helping members strengthen their professional skill sets.}
+            \resumeItemListEnd
+        \resumeSubheading{Idaho Quantitative Traders} {August 2025 - Present}{Member}{}
+            \resumeItemListStart
+                \resumeItem{Contributed to the development of a Go-based strategy backtesting system, enabling simulation, performance analysis, and iteration on algorithmic trading logic.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\end{document}
